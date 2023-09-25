@@ -58,7 +58,7 @@ print(f"Average Change: {avg_chg}")
 # Greatest increase in Profits
 print(f"Greatest Increase in Profits: {(date[monthly_change.index(max(monthly_change))+1])} ${(max(monthly_change))}")
 # Greatest decrease in profits
-print(f"Greatest Increase in Profits: {(date[monthly_change.index(min(monthly_change))+1])} ${(min(monthly_change))}")
+print(f"Greatest Derease in Profits: {(date[monthly_change.index(min(monthly_change))+1])} ${(min(monthly_change))}")
 
 # Print Financial Analysis to text file
 f = open("Financial_Analysis.txt", "w")
@@ -68,5 +68,5 @@ print (f"Months: {total_months}", file=f)
 print(f"Total: ${total_P_L}", file=f)
 print(f"Average Change: ${avg_chg}", file=f)
 print(f"Greatest Increase in Profits: {(date[monthly_change.index(max(monthly_change))+1])} (${(max(monthly_change))})", file=f)
-print(f"Greatest Increase in Profits: {(date[monthly_change.index(min(monthly_change))+1])} (${(min(monthly_change))})", file=f)
+print(f"Greatest Decrease in Profits: {(date[monthly_change.index(min(monthly_change))+1])} (${(min(monthly_change))})", file=f)
 f.close()
